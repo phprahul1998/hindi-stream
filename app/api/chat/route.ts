@@ -3,10 +3,10 @@ import { OpenAIStream, StreamingTextResponse } from 'ai';
 
 // Create an OpenAI API client (that's edge friendly!)
 const config = new Configuration({
-  apiKey: ' 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',
+  apiKey: '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',
 });
 const openai = new OpenAIApi(config);
-const rr= 'What is india?'
+const rr= 'What is internet?'
 // Set the runtime to edge for best performance
 export const runtime = 'edge';
 
@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     messages: [
       {
         role: 'user',
-        content: `Plese response in hindi ${rr}`,
+        content: `Plese explain in hindi ${rr}`,
       },
     ],
   });
