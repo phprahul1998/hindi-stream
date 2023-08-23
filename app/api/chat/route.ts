@@ -3,7 +3,7 @@ import { OpenAIStream, StreamingTextResponse } from 'ai';
 
 // Create an OpenAI API client (that's edge friendly!)
 const config = new Configuration({
-  apiKey: ' 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',
+  apiKey: ' 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',
 });
 const openai = new OpenAIApi(config);
 const rr= 'What is india?'
